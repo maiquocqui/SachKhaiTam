@@ -1,0 +1,82 @@
+.container
+	section.cart-page
+		.cart-title Giỏ hàng của bạn 
+			span (1 sản phẩm)
+		.row
+			.col-12.col-lg-9
+				.cart-step
+					.cart-table
+						table
+							tr
+								th Sản phẩm
+								th Số lượng
+								th Giá
+								th Giảm giá
+								th Thành tiền
+								th
+							tr
+								td
+									.product
+										.img
+											img(src="img/pr2.png", alt="")
+										.caption
+											a.name(href="#!") Đắc Nhân Tâm - Bí quyết để thành công
+								td
+									.d-flex.justify-content-center
+										.input-number
+											span.btn-spin.btn-dec -
+											input(type="text" value="1")
+											span.btn-spin.btn-inc +
+								td
+									.price 68.000đ
+								td
+									.sale -35%
+								td
+									.total 57.800đ
+								td
+									a.btn-remove(href="#!")
+										i.fa.fa-trash-o
+			.col-12.col-lg-3
+				.cart-step.s2
+					.cart-service
+						.form-wrap
+							.form-group
+								label.w-100
+									strong Chọn dịch vụ cộng thêm
+								.checkbox
+									input#qua(type="checkbox", name="")
+									label(for="qua") GÓI QUÀ để gửi quà tặng đến bạn bè, người thân - 10.000 đ/gói quà
+							.form-group
+								label.w-100
+									strong Số Búp Sen của bạn hiện có : 2595 điểm
+								.checkbox
+									input#qua2(type="checkbox", name="")
+									label(for="qua2") Giảm giá với Búp Sen
+					.cart-overview
+						ul
+							li
+								label(for="") 
+									strong Tổng giỏ hàng
+								.value 57.800đ
+							li
+								label(for="") Phí vận chuyển
+								.value 0đ
+							li
+								label(for="") Phí Bưu điện phụ thu 
+								.value Chưa có
+							li
+								label(for="") Dịch vụ cộng thêm
+								.value Chưa có
+					.cart-total
+						label Thành tiền
+						.value
+							strong 57.800đ
+							span (Đã bao gồm VAT)
+					.btn-wrap
+						a.btn-continue(href="#!") Mời mua hàng
+				.cart-step.s3
+					.cart-gift
+						label Mã giảm giá / Quà tặng
+						.code-input
+							input(type="text" placeholder="Nhập code ở đây")
+							button.code-submit Đồng ý

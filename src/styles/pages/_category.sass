@@ -1,0 +1,73 @@
+.page-banner
+	margin-top: 10px
+.category-filter
+	margin-bottom: 10px
+	.category-list
+		margin: 0px -5px
+		+flexbox
+		flex-wrap: wrap
+		li
+			padding: 0px 5px
+			width: calc(100% / 11)
+			margin-bottom: 10px
+			a
+				height: 50px
+				border: 1px solid darken($white,15%)
+				+bor-rad(4px)
+				background: $white
+				+flexbox
+				flex-wrap: wrap
+				align-items: center
+				align-content: center
+				justify-content: center
+				+fs(13rem)
+				line-height: 1.2
+				text-align: center
+				padding: 0px 5px
+				&:hover
+					color: $green
+.category-header
+	min-height: 50px
+	background: $white
+	+flexbox
+	flex-wrap: wrap
+	align-items: center
+	align-content: center
+	justify-content: space-between
+	color: darken($white,60%)
+	padding: 0px 20px
+	border-bottom: 1px solid darken($white,5%)
+	.amount
+		+fs(13rem)
+		strong
+			color: $main
+	.sort
+		+flexbox
+		.group
+			+flexbox
+			align-items: center
+			align-content: center
+			+ .group
+				margin-left: 15px
+			label
+				+fs(13rem)
+				margin-right: 10px
+			select
+				min-width: 120px
+				+fs(13rem)
+				color: darken($white,60%)
+				border: 1px solid darken($white,10%)
+				+bor-rad(3px)
+				padding: 5px 10px
+.category-page
+	background: $white
+	margin-bottom: 40px
+	.product-list
+		padding: 20px 20px 0
+		.col-custom
+			+media-breakpoint-up(xl)
+				flex: 0 0 20%
+				max-width: 20%
+		.pages, + .pages
+			ul.pagination
+				justify-content: center

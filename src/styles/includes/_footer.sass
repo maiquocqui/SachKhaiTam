@@ -1,0 +1,84 @@
+footer
+	background: $white
+	.footer-top
+		background: $green
+		padding: 15px 0px 0px
+	.footer-feature
+		.feature-col
+			color: $white
+			margin-bottom: 15px
+			+flexbox
+			.icon
+				width: 50px
+				.md
+					+fs(36rem)
+			.caption
+				width: calc(100% - 50px)
+				color: $white
+				padding-top: 5px
+				.title
+					+fs(14rem)
+					font-weight: 700
+					text-transform: uppercase
+					margin-bottom: 5px
+				.des
+					+fs(13rem)
+					opacity: 0.8
+	.footer-main
+		padding: 40px 0 20px
+	.footer-col
+		margin-bottom: 40px
+		ul
+			li
+				+fs(13rem)
+				padding-left: 20px
+				+pos(rel,null)
+				.md
+					+fs(16rem)
+					+pos(abs, 0 null null 0)
+					vertical-align: middle
+	.footer-title
+		+fs(14rem)
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 10px
+		span
+			text-transform: none
+	.footer-link
+		a
+			display: block
+			+fs(13rem)
+			&:hover
+				color: $green
+	.footer-about
+		border-top: 1px solid darken($white,10%)
+		padding-top: 40px
+	.footer-bottom
+		background: #4a4a4a
+		.footer-wrap
+			+flexbox
+			justify-content: space-between
+			align-items: center
+			align-content: center
+			min-height: 45px
+		.copyright
+			+fs(13rem)
+			color: $white
+		.col-right
+			justify-content: flex-end
+		.social
+			+flexbox
+			align-items: center
+			align-content: center
+			a
+				+flexbox
+				align-items: center
+				align-content: center
+				justify-content: center
+				color: $main
+				background: $white
+				+bor-rad(50px)
+				width: 24px
+				height: 24px
+				+ a
+					margin-left: 10px

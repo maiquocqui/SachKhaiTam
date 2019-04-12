@@ -1,0 +1,417 @@
+.container
+	include ../_layout/breadcrumb
+	section.category-page
+		.product-detail
+			.row
+				.col-12.col-md-5
+					.product-slide-wrap
+						.slide-nav
+							.item
+								.img
+									img(src="img/pr2.png", alt="")
+						.slide-main
+							.item
+								a.img(href="img/pr2.png" data-fancybox="detail-img")
+									img(src="img/pr2.png", alt="")
+				.col-12.col-md-7
+					.product-intro
+						h1.product-name Đắc Nhân Tâm - Bí quyết để thành công
+						.rating
+							ul
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li
+									i.fa.fa-star
+							span.text-green 16 nhận xét
+						.row
+							.col-12.col-lg-7
+								.product-price
+									ul
+										li Giá bìa: 
+											span.price-old 68.000đ
+										li Tại Sách Khai Tâm: 
+											span.price-new 57.800 đ
+										li Tiết kiệm: 
+											strong 10.200đ 
+											span.promotion.sale -15%
+								.product-overview
+									p.mb-2
+										strong Giá trị & dịch vụ cộng thêm:
+									ul
+										li Tặng kèm bookmark danh ngôn trên mỗi đơn hàng
+										li Giao hàng miễn phí từ 120k ở nội thành HCM
+										li Với mỗi 90k trong đơn hàng, quý khách được tặng 1 
+										li Bao đọc sách hay, đổi ngay nếu dở 
+											a.text-green(href="#!") (chi tiết)
+								.product-btn
+									.warning Sắp phát hành*
+									label Số lượng:
+									.input-number
+										.btn-spin.btn-dec -
+										input(type="text" value="1")
+										.btn-spin.btn-inc +
+									a.btn-buy(href="#!") Mời mua hàng
+									.warning Hết hàng*
+									.input-email
+										input(type="text" placeholder="Email của bạn")
+									a.btn-notify(href="#!") THÔNG BÁO KHI CÓ HÀNG
+									a.des.text-green(href="#!") (Vui lòng xem hướng dẫn mua hàng)
+								.share
+									img(src="img/share.png", alt="")
+							.col-12.col-lg-5
+								.book-info
+									ul
+										li Tác giả: 
+											a(href="#!") Dale Carnegie
+										li Dịch giả: 
+											a(href="#!") Nguyễn Hiến Lê
+										li Nhà xuất bản: 
+											a(href="#!") NXB Tổng hợp Tp.HCM
+										li Số trang: 
+											strong 399
+										li Hình thức bìa: 
+											strong Bìa mềm
+										li Ngày xuất bản: 
+											strong 2017
+										li Trọng lượng (gr): 
+											strong 320
+		.product-description
+			ul#myTab.nav.nav-tabs(role='tablist')
+				li.nav-item
+					a#tab1-tab.nav-link.active(data-toggle='tab', href='#tab1', role='tab', aria-controls='home', aria-selected='true') GIỚI THIỆU
+				li.nav-item
+					a#tab2-tab.nav-link(data-toggle='tab', href='#tab2', role='tab', aria-controls='profile', aria-selected='false') MỤC LỤC
+				li.nav-item
+					a#tab3-tab.nav-link(data-toggle='tab', href='#tab3', role='tab', aria-controls='contact', aria-selected='false') VIDEO
+				li.nav-item
+					a#tab4-tab.nav-link(data-toggle='tab', href='#tab4', role='tab', aria-controls='contact', aria-selected='false') ĐÁNH GIÁ CỦA ĐỘC GIẢ
+				li.nav-item
+					a#tab5-tab.nav-link(data-toggle='tab', href='#tab5', role='tab', aria-controls='contact', aria-selected='false') CẢM NHẬN QUA FACEBOOK
+			#myTabContent.tab-content
+				#tab1.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+					.content
+						p 
+							strong Vì lẽ gì ông Dale Carnegie viết cuốn này?
+						p "...Từ năm 1912 ông Dale Carnegie mở một lớp dạy các nhà buôn, nhà kỹ nghệ, các người làm nghề tự do, các viên chỉ huy mọi ngành hoạt động, cách phô diễn những tư tưởng của họ trước công chúng sao cho được mạnh mẽ, sáng sủa và dễ dàng.
+						p Nhưng lần lần, ông thấy rằng học trò của ông còn thiếu một khoa vô cùng quí báu hon, tức khoa “Tâm lý thực hành” khoa dạy người ta cách giao thiệp vói người khác, từ thân cho tới sơ; sao cho ai cũng vừa lòng mình, mến mình mà muốn giúp đỡ mình. Chính ông cũng tự thấy ông thiếu khoa rất quan trọng đó.
+						p Học đường Carnegie do ông vua thép Andrew Carnegie sáng lập, đã nghiên cứu và thấy rằng cả trong những nghề hoàn toàn khoa học, như nghề kỹ sư chẳng hạn, sự thành công cũng chỉ có 15% do tài kỹ thuật, còn 85% do tài dẫn dụ người khác. Những kỹ sư biết rõ nghề không thiếu gì ở đời, nhưng những viên kỹ sư vừa biết rõ nghề vừa biết dẫn đạo người cộng tác với mình thì rất hiếm! Vua dầu lửa John D. Rochkefeller, cũng nhận vậy: "Người nào biết chỉ huy, điều khiển người khác là có một số vốn vô cùng quý ở dưới gầm trời này..."
+				#tab2.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab') ...
+				#tab3.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab') ...
+				#tab4.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+					.comment
+						img(src="img/comment.png", alt="")
+					.pages
+						ul.pagination
+							li.active
+								a(href="#!") 1
+							li
+								a(href="#!") 2
+							li
+								a(href="#!") 3
+							li
+								a(href="#!") 4
+				#tab5.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab') ...
+	section.home-product.same-author
+		.small-title 
+			span SÁCH CÙNG TÁC GIẢ
+		a.btn-viewall(href="#!") Xem tất cả
+		.product-slick
+			.item
+				a.product-item(href="#!")
+					.img
+						img(src="img/pr1.png", alt="")
+					.caption
+						h3.name Suy niệm mỗi ngày - Tái bản lần 3
+						.author Lev Tolstoy
+						.price
+							.new 91.900đ
+							.old 126.000đ
+							.promotion.sale -20%
+						.rating
+							ul
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li
+									i.fa.fa-star
+							span 16 nhận xét
+			.item
+				a.product-item(href="#!")
+					.img
+						img(src="img/pr1.png", alt="")
+					.caption
+						h3.name Suy niệm mỗi ngày - Tái bản lần 3
+						.author Lev Tolstoy
+						.price
+							.new 91.900đ
+							.old 126.000đ
+							.promotion.sale -20%
+						.rating
+							ul
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li
+									i.fa.fa-star
+							span 16 nhận xét
+			.item
+				a.product-item(href="#!")
+					.img
+						img(src="img/pr1.png", alt="")
+					.caption
+						h3.name Suy niệm mỗi ngày - Tái bản lần 3
+						.author Lev Tolstoy
+						.price
+							.new 91.900đ
+							.old 126.000đ
+							.promotion.sale -20%
+						.rating
+							ul
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li
+									i.fa.fa-star
+							span 16 nhận xét
+			.item
+				a.product-item(href="#!")
+					.img
+						img(src="img/pr1.png", alt="")
+					.caption
+						h3.name Suy niệm mỗi ngày - Tái bản lần 3
+						.author Lev Tolstoy
+						.price
+							.new 91.900đ
+							.old 126.000đ
+							.promotion.sale -20%
+						.rating
+							ul
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li
+									i.fa.fa-star
+							span 16 nhận xét
+			.item
+				a.product-item(href="#!")
+					.img
+						img(src="img/pr1.png", alt="")
+					.caption
+						h3.name Suy niệm mỗi ngày - Tái bản lần 3
+						.author Lev Tolstoy
+						.price
+							.new 91.900đ
+							.old 126.000đ
+							.promotion.sale -20%
+						.rating
+							ul
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li
+									i.fa.fa-star
+							span 16 nhận xét
+			.item
+				a.product-item(href="#!")
+					.img
+						img(src="img/pr1.png", alt="")
+					.caption
+						h3.name Suy niệm mỗi ngày - Tái bản lần 3
+						.author Lev Tolstoy
+						.price
+							.new 91.900đ
+							.old 126.000đ
+							.promotion.sale -20%
+						.rating
+							ul
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li
+									i.fa.fa-star
+							span 16 nhận xét
+	section.home-product.mb-5
+		.small-title 
+			span CÓ THỂ BẠN QUAN TÂM
+		a.btn-viewall(href="#!") Xem tất cả
+		.product-slick
+			.item
+				a.product-item(href="#!")
+					.img
+						img(src="img/pr1.png", alt="")
+					.caption
+						h3.name Suy niệm mỗi ngày - Tái bản lần 3
+						.author Lev Tolstoy
+						.price
+							.new 91.900đ
+							.old 126.000đ
+							.promotion.sale -20%
+						.rating
+							ul
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li
+									i.fa.fa-star
+							span 16 nhận xét
+			.item
+				a.product-item(href="#!")
+					.img
+						img(src="img/pr1.png", alt="")
+					.caption
+						h3.name Suy niệm mỗi ngày - Tái bản lần 3
+						.author Lev Tolstoy
+						.price
+							.new 91.900đ
+							.old 126.000đ
+							.promotion.sale -20%
+						.rating
+							ul
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li
+									i.fa.fa-star
+							span 16 nhận xét
+			.item
+				a.product-item(href="#!")
+					.img
+						img(src="img/pr1.png", alt="")
+					.caption
+						h3.name Suy niệm mỗi ngày - Tái bản lần 3
+						.author Lev Tolstoy
+						.price
+							.new 91.900đ
+							.old 126.000đ
+							.promotion.sale -20%
+						.rating
+							ul
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li
+									i.fa.fa-star
+							span 16 nhận xét
+			.item
+				a.product-item(href="#!")
+					.img
+						img(src="img/pr1.png", alt="")
+					.caption
+						h3.name Suy niệm mỗi ngày - Tái bản lần 3
+						.author Lev Tolstoy
+						.price
+							.new 91.900đ
+							.old 126.000đ
+							.promotion.sale -20%
+						.rating
+							ul
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li
+									i.fa.fa-star
+							span 16 nhận xét
+			.item
+				a.product-item(href="#!")
+					.img
+						img(src="img/pr1.png", alt="")
+					.caption
+						h3.name Suy niệm mỗi ngày - Tái bản lần 3
+						.author Lev Tolstoy
+						.price
+							.new 91.900đ
+							.old 126.000đ
+							.promotion.sale -20%
+						.rating
+							ul
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li
+									i.fa.fa-star
+							span 16 nhận xét
+			.item
+				a.product-item(href="#!")
+					.img
+						img(src="img/pr1.png", alt="")
+					.caption
+						h3.name Suy niệm mỗi ngày - Tái bản lần 3
+						.author Lev Tolstoy
+						.price
+							.new 91.900đ
+							.old 126.000đ
+							.promotion.sale -20%
+						.rating
+							ul
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li.active
+									i.fa.fa-star
+								li
+									i.fa.fa-star
+							span 16 nhận xét

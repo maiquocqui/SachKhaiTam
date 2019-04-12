@@ -1,0 +1,211 @@
+body
+	padding-top: 160px
+header
+	background: $green
+	+pos(fix, 0 0 null 0)
+	z-index: 1000
+	.header-top
+		background: $greendark
+	.header-wrap
+		+flexbox
+		flex-wrap: wrap
+		align-items: center
+		align-content: center
+	.col-right
+		justify-content: flex-end
+		align-items: center
+		align-content: center
+	.hotline
+		color: $white
+		+flexbox
+		align-items: center
+		align-content: center
+		height: 30px
+		+fs(13rem)
+		.md
+			+fs(18rem)
+		a
+			color: $white
+			&:hover
+				color: $orangelight
+	.login
+		ul
+			+flexbox
+			align-items: center
+			align-content: center
+			li
+				+ li
+					margin-left: 20px
+				a
+					+flexbox
+					align-items: center
+					align-content: center
+					color: $white 
+					+fs(13rem)
+					.md
+						+fs(18rem)
+						margin-right: 5px
+					&:hover
+						color: $orangelight
+
+	.header-main
+	.sitelogo
+		+flexbox
+		align-items: center
+		align-content: center
+		justify-content: center
+		height: 90px
+		a
+			display: block
+	.search
+		.searchbox
+			background: $white
+			+flexbox
+			width: 665px
+			height: 40px
+			+bor-rad(3px)
+			overflow: hidden
+			box-shadow: 0 1px 2px color-rgba($black,0.2)
+			input
+				flex: 3
+				+fs(13rem)
+				border: none
+				padding: 0px 15px
+			select
+				flex: 1
+				border: none
+				border-left: 1px solid color-rgba($black,0.1)
+				margin: 10px 0
+				+fs(13rem)
+				padding: 0px 15px
+				color: darken($white,60%)
+			.searchbutton
+				background: linear-gradient($orangelight, $orange)
+				color: $white
+				+flexbox
+				align-items: center
+				align-content: center
+				padding: 0px 10px
+				border: none
+				width: 100px
+				justify-content: center
+				.md
+					+fs(18rem)
+				span
+					+fs(14rem)
+	.cart
+		+pos(rel,null)
+		.cart-toggle
+			+flexbox
+			align-items: center
+			align-content: center
+			padding: 0 10px
+			height: 40px
+			border: 1px solid $white
+			+transition(all,0.3s)
+			+bor-rad(3px)
+			.cart-icon
+				+pos(rel,null)
+				margin-right: 10px
+				color: $white
+				+flexbox
+				align-items: center
+				align-content: center
+				+transition(all,0.3s)
+				.cart-amount
+					+fs(10rem)
+					line-height: 1
+					padding: 2px 5px
+					background: $orange
+					color: $white
+					+bor-rad(100px)
+					+pos(abs, 0 -5px null null)
+					z-index: 3
+					color: $white
+			span 
+				+fs(14rem)
+				line-height: 1
+				color: $white
+				+transition(all,0.3s)
+			&:hover, &.active
+				background: $white
+				.cart-icon
+					color: $green
+				span
+					color: $green
+	.header-menu
+		.sidebar-menu
+			.btn-sidebar
+				width: 245px
+				height: 40px
+				background: $greendark
+				+flexbox
+				align-items: center
+				align-content: center
+				padding: 0px 10px
+				.md
+					margin-right: 5px
+					color: $white
+				span
+					color: $white
+					+fs(13rem)
+					font-weight: 700
+					text-transform: uppercase
+		.h-menu
+			flex: 1
+			ul.menu-link
+				+flexbox
+				> li
+					flex: auto
+					+pos(rel,null)
+					> a
+						+flexbox
+						height: 40px
+						align-items: center
+						align-content: center
+						justify-content: center
+						color: $white
+						font-weight: 700
+						+fs(13rem)
+						text-transform: uppercase
+					&.has-sub
+						> a
+							&:after
+								content: '\f107'
+								margin-left: 5px
+						.sub
+							display: none
+							+pos(abs, 100% null null 50%)
+							z-index: 1000
+							width: 200px
+							background: $white
+							+transform(translateX(-50%))
+							box-shadow: 0px 1px 4px color-rgba($black,0.25)
+							&:before
+								content: ''
+								display: block
+								width: 0
+								height: 0
+								border: 8px solid transparent
+								border-top: none
+								border-bottom-color: $white
+								+pos(abs, -8px null null 50%)
+								+transform(translateX(-50%))
+							> ul
+								> li
+									padding: 0px 15px
+									> a
+										display: block
+										+fs(13rem)
+										color: $main
+										line-height: 20px
+										padding: 5px 0
+										border-bottom: 1px solid darken($white,5%)
+									&:hover
+										> a
+											color: $green
+						&:hover
+							.sub
+								display: block
+
+

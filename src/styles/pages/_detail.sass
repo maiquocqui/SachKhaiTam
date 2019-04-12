@@ -1,0 +1,202 @@
+.product-detail
+	padding: 20px
+	.product-slide-wrap
+		+flexbox
+		.slide-nav
+			width: 90px
+			height: 490px
+			.item
+				.img
+					width: 90px
+					height: 90px
+					+flexbox
+					align-items: center
+					align-content: center
+					justify-content: center
+					border: 1px solid darken($white,5%)
+					img
+						max-height: 100%
+						height: 100%
+			.slick-current
+				.item
+					.img
+						border-color: $green
+		.slide-main
+			width: calc(100% - 90px)
+			height: 490px
+			.item
+				.img
+					+flexbox
+					align-items: center
+					align-content: center
+					justify-content: center
+					img
+						height: 100%
+						max-height: 100%
+	.product-intro
+		.product-name
+			+fs(24rem)
+		.rating
+			+flexbox
+			align-items: center
+			align-content: center
+			+fs(14rem)
+			padding-bottom: 10px
+			border-bottom: 1px solid darken($white,5%)
+			margin-bottom: 15px
+			ul
+				+flexbox
+				align-items: center
+				align-content: center
+				margin-right: 10px
+				li
+					color: darken($white,20%)
+					+ li
+						margin-left: 3px
+					&.active
+						.fa
+							color: $amber
+		.product-price
+			padding-bottom: 15px
+			border-bottom: 1px dashed darken($white,10%)
+			margin-top: -5px
+			ul
+				li
+					+flexbox
+					align-items: flex-end
+					align-content: flex-end
+					+fs(13rem)
+					height: 1.7rem
+					span
+						margin-left: 10px
+				.price-old
+					color: darken($white,40%)
+				.price-new
+					+fs(28rem)
+					font-weight: 700
+					color: #FF0000
+					line-height: 1
+			.promotion
+				display: inline-block
+				vertical-align: middle
+				margin-left: 20px
+				+fs(11rem)
+				font-weight: 700
+				background: $orange
+				color: $white
+				line-height: 16px
+				padding: 0px 3px
+				+bor-rad(0 4px 4px 0)
+				+pos(rel,null)
+				&:before
+					content: ''
+					display: block
+					border: 8px solid transparent
+					border-left: none
+					border-right-color: $orange
+					+pos(abs, 0 null null -8px)
+		.product-overview
+			padding: 15px 0
+			+fs(13rem)
+			color: darken($white,60%)
+			border-bottom: 1px dashed darken($white,10%)
+			strong
+				color: $main
+			ul
+				li
+					margin-bottom: 5px
+					&:before
+						content: '+'
+						margin-right: 5px
+		.product-btn
+			+flexbox
+			flex-wrap: wrap
+			padding: 15px 0
+			.warning
+				font-weight: bold
+				+fs(13rem)
+				color: #f00
+				margin-bottom: 5px
+				width: 100%
+			label
+				width: 100%
+				font-weight: 700
+				color: $main
+				+fs(13rem)
+				margin-bottom: 10px
+			.input-number
+				width: 100px
+				justify-content: space-between
+				height: 40px
+				align-items: center
+				align-content: center
+				border: 1px solid darken($white,5%)
+				.btn-spin
+					+fs(16rem)
+					width: 30px
+					text-align: center
+					color: darken($white,40%)
+					&:hover
+						color: $green
+			.btn-buy
+				@extend .button-primary
+				margin-left: 10px
+				flex: 1
+				text-transform: uppercase
+				+fs(14rem)
+				&:before
+					content: '\f07a'
+					margin-right: 5px
+					font-weight: normal
+			.input-email
+				width: 130px
+				input
+					width: 100%
+					+fs(13rem)
+					line-height: 38px
+					border: 1px solid darken($white,5%)
+					padding: 0px 15px
+			.btn-notify
+				@extend .button-primary
+				margin-left: 10px
+				flex: 1
+				text-transform: uppercase
+				+fs(14rem)
+				padding: 0
+			.des
+				+fs(13rem)
+				display: block
+				width: 100%
+				margin-top: 10px
+				&:hover
+					color: $orange
+		.book-info
+			border: 1px solid darken($white,5%)
+			+bor-rad(4px)
+			padding: 15px
+			ul
+				li
+					margin-bottom: 7px
+					+fs(13rem)
+					&:last-child
+						margin-bottom: 0
+					a
+						color: $green
+					strong
+						color: $main
+.product-description
+	padding: 0px 20px
+	.nav-tabs
+		.nav-item
+			.nav-link
+	.tab-pane
+		padding: 20px 0
+	.comment
+		+flexbox
+		justify-content: center
+		overflow: hidden
+	.pages
+		ul.pagination
+			justify-content: center
+.same-author
+	margin-top: -30px

@@ -1,0 +1,25 @@
+.nav-tabs
+	margin: 0
+	padding: 0
+	border-bottom: 1px solid darken($white,5%)
+	display: block
+	// white-space: nowrap
+	// overflow: auto
+	.nav-item
+		display: inline-block
+		margin-bottom: -1px
+		+ .nav-item
+			margin-left: 50px
+		.nav-link
+			border: none
+			border-bottom: 2px solid transparent
+			+fs(14rem)
+			line-height: 20px
+			padding: 10px 0
+			text-transform: uppercase
+			color: darken($white,40%)
+			&:hover
+				color: $green
+			&.active
+				color: $main
+				border-bottom-color: $green

@@ -1,0 +1,316 @@
+.cart-page
+	padding-top: 10px
+	.row
+		margin: 0px -5px
+		.col-12
+			padding: 0px 5px
+	.cart-title
+		+fs(14rem)
+		text-transform: uppercase
+		font-weight: 500
+		padding: 10px 0
+		span
+			color: darken($white,40%)
+			text-transform: none
+			font-weight: normal
+.cart-step
+	background: $white
+	margin-bottom: 10px
+	&.s2
+		padding: 0 10px
+	.cart-table
+		background: $white
+		table
+			th
+				border-bottom: 1px solid darken($white,5%)
+				+fs(14rem)
+				font-weight: 700
+				line-height: 20px
+				padding: 10px 15px
+				text-align: center
+				&:first-child
+					text-align: left
+			td
+				text-align: center
+				vertical-align: middle
+				&:first-child
+					text-align: left
+			.product
+				padding: 15px
+				width: 250px
+				+flexbox
+				align-items: center
+				align-content: center
+				.img
+					width: 70px
+				.caption
+					padding-left: 20px
+					.name 
+						display: block
+						+fs(13rem)
+						line-height: 1.3
+						&:hover
+							color: $green
+			.price, .sale, .total
+				+fs(13rem)
+				text-align: center
+			.btn-remove
+				+fs(16rem)
+				color: darken($white,40%)
+				text-align: center
+				display: block
+				&:hover
+					color: #f00
+	.cart-service
+		padding: 10px 0
+		border-bottom: 1px solid darken($white,5%)
+	.cart-title-info
+		+fs(16rem)
+		line-height: 20px
+		padding: 10px 10px
+		+pos(rel,null)
+		border-bottom: 1px solid darken($white,5%)
+		margin: 0px -10px
+		background: #FAFAFA
+		.btn-edit
+			+pos(abs, 10px 10px null null)
+			color: $green
+	.cart-address
+		padding: 10px
+		li
+			+fs(13rem)
+			margin-bottom: 10px
+	.cart-product
+		border-bottom: 1px solid darken($white,5%)
+		.title
+			line-height: 20px
+			padding: 10px 0
+			+fs(13rem)
+			font-weight: 700
+			border-bottom: 1px solid darken($white,5%)
+		.item
+			+flexbox
+			align-items: center
+			align-content: center
+			padding: 10px 0
+			.img
+				display: block
+				width: 47px
+			.caption
+				width: calc(100% - 47px - 10px)
+				padding-left: 10px
+				.name
+					display: block
+					+fs(13rem)
+					line-height: 1.3
+					color: $green
+					+textover(2)
+				.amount
+					+fs(13rem)
+					line-height: 1.3
+					font-weight: 700
+					color: $main
+			.price
+				width: 100px
+				text-align: right
+				+fs(13rem)
+				font-weight: 700
+				color: #f00
+	.cart-overview
+		padding: 10px 0
+		border-bottom: 1px solid darken($white,5%)
+		ul
+			li
+				+flexbox
+				align-items: center
+				align-content: center
+				justify-content: space-between
+				+fs(13rem)
+				margin-bottom: 5px
+				label
+				.value
+	.cart-total
+		+flexbox
+		align-items: flex-start
+		align-content: flex-start
+		justify-content: space-between
+		padding: 10px 0
+		label
+			+fs(13rem)
+			text-transform: uppercase
+			font-weight: 700
+		.value
+			text-align: right
+		strong
+			color: #f00
+			+fs(18rem)
+			line-height: 1
+			font-weight: 700
+			display: block
+		span
+			+fs(13rem)
+			color: darken($white,40%)
+	.cart-des
+		+fs(13rem)
+		line-height: 1.5
+		color: $main
+		padding-bottom: 10px
+	.btn-wrap
+		padding-bottom: 10px
+	.btn-continue
+		@extend .button-primary
+		line-height: 40px
+		+fs(14rem)
+		text-transform: uppercase
+		text-align: center
+		display: block
+	.cart-gift
+		label
+			display: block
+			width: 100%
+			padding: 10px
+			line-height: 20px
+			+fs(13rem)
+			border-bottom: 1px solid darken($white,5%)
+		.code-input
+			+pos(rel,null)
+			padding: 10px
+			input
+				line-height: 34px
+				border: 1px solid darken($white,5%)
+				+bor-rad(4px)
+				+fs(13rem)
+				width: 100%
+				padding: 0px 15px
+			.code-submit
+				@extend .button-primary
+				min-width: unset
+				width: 70px
+				+fs(13rem)
+				font-weight: normal
+				text-transform: none
+				line-height: 36px
+				+pos(abs, 10px 10px null null)
+
+// progress
+
+.cart-progress
+	padding: 15px 0
+	margin-bottom: 10px
+	ul
+		+flexbox
+		align-items: center
+		align-content: center
+		justify-content: center
+		li
+			width: 25%
+			+flexbox
+			flex-direction: column
+			align-items: center
+			align-content: center
+			+pos(rel,null)
+			&:before
+				content: ''
+				display: block
+				width: 100%
+				height: 10px
+				background: #E1E1E1
+				+pos(abs, 25px 50% null null)
+				+transform(translateY(-50%))
+			&:first-child
+				&:before
+					display: none
+			.number
+				width: 40px
+				height: 40px
+				+bor-rad(50px)
+				background: #E1E1E1
+				+flexbox
+				align-items: center
+				align-content: center
+				justify-content: center
+				color: #888888
+				+fs(16rem)
+				border: 5px solid #EFEEF3
+				box-sizing: content-box
+				margin-bottom: 10px
+				+pos(rel,null)
+				z-index: 3
+			label
+				color: #888888
+				+fs(14rem)
+			&.active
+				&:before
+					background: $green
+				.number
+					background: $green
+					color: $white
+				label
+					font-weight: 700
+					color: $main
+
+.cart-step.s4
+	padding: 0px 20px
+	margin-bottom: 40px
+	.cart-login
+		padding: 30px 0
+		width: 100%
+		.form-title
+			+fs(14rem)
+			font-weight: 700
+			text-transform: uppercase
+			margin-bottom: 10px
+		.form-hr
+			width: 100%
+			height: 1px
+			background: darken($white,5%)
+			max-width: 700px
+			margin: 20px auto
+		.form-wrap
+			max-width: 600px
+			margin: 0 auto
+			.form-group
+				+flexbox
+				flex-wrap: wrap
+				+flexbox
+				align-items: center
+				align-content: center
+				label
+					width: 120px
+					text-align: right
+					padding-right: 10px
+				input
+					width: calc(100% - 120px)
+				select
+					max-width: 230px
+					
+		.login-choice
+			margin-left: 120px
+			margin-bottom: 15px
+			li
+				margin-bottom: 10px
+				&:last-child
+					margin-bottom: 0
+		.forget-pw
+			margin-left: 120px
+			+fs(13rem)
+			color: $green
+			margin-top: 10px
+			&:hover
+				color: $orange
+		.agree
+			@extend .checkbox
+			margin-left: 120px
+			margin-bottom: 15px
+		.btn-login
+			@extend .button-primary
+			text-transform: uppercase
+			// min-width: 400px
+			// line-height: 50px
+			// +fs(16rem)
+			margin-left: 120px
+		.form-des
+			+fs(13rem)
+			color: darken($white,40%)
+			margin-left: 120px
+

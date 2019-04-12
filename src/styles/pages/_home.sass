@@ -1,0 +1,241 @@
+.sidebar-title
+	+fs(24rem)
+	text-transform: uppercase
+	margin-bottom: 15px
+.small-title
+	border-bottom: 1px solid darken($white,5%)
+	span
+		display: inline-block
+		+fs(14rem)
+		font-weight: 500
+		text-transform: uppercase
+		border-bottom: 2px solid $green
+		margin-bottom: -1px
+		padding: 10px 0
+
+.home-flex
+	+flexbox
+	flex-wrap: wrap
+	margin-bottom: 20px
+// sidebar menu
+.home-menu
+	width: 245px
+	background: $white
+	ul.menu-link
+		> li
+			padding: 0px 15px
+			+pos(rel,null)
+			> a
+				display: block
+				+fs(13rem)
+				line-height: 20px
+				padding: 5px 0
+				border-bottom: 1px solid darken($white,5%)
+				span
+					+fs(11rem)
+					color: darken($white,40%)
+			&.has-sub
+				> a
+					&:after
+						content: '\f105'
+						+pos(abs, 5px 15px null null)
+						z-index: 1
+						opacity: 0.3
+				.mega-sub
+					+pos(abs, 0 null null 100%)
+					z-index: 1000
+					width: 655px
+					background: $white
+					padding: 20px
+					box-shadow: 0px 1px 4px color-rgba($black,0.25)
+					display: none
+					.title
+						display: block
+						+fs(14rem)
+						color: $green
+						text-transform: uppercase
+						margin-bottom: 10px
+					.mega-row
+						+flexbox
+						flex-wrap: wrap
+						margin: 0px -10px
+						.mega-col
+							width: 25%
+							padding: 0px 10px
+							ul
+								li
+									margin-bottom: 5px
+									a
+										+fs(13rem)
+										color: $main
+									&:hover
+										a
+											color: $green
+			&:hover
+				> a
+					color: $green
+				.mega-sub
+					display: block
+
+// home banner
+.home-banner-wrap
+	width: calc(100% - 245px - 10px)
+	margin-left: 10px
+	padding-top: 10px
+	+flexbox
+	flex-wrap: wrap
+	align-items: flex-start
+	align-content: flex-start
+	.row
+		margin: 0px -5px
+		.col-12
+			padding: 0px 5px
+	.home-banner
+		width: 685px
+		.slick-prev, .slick-next
+			+pos(abs,50% null null null)
+			+transform(translateY(-50%))
+			+fs(0)
+			z-index: 5
+			&:before
+				content: ''
+				+flexbox
+				align-items: center
+				align-content: center
+				justify-content: center
+				+fs(18rem)
+				width: 40px
+				height: 40px
+				+bor-rad(50px)
+				background: $white
+				box-shadow: 1px 1px 3px color-rgba($black,0.2)
+			&:hover
+				color: $green
+		.slick-prev
+			left: 10px
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 10px
+			&:before
+				content: '\f105'
+		.slick-dots
+			+pos(abs, null 0 10px 0)
+			text-align: center
+			li
+				display: inline-block
+				width: 10px
+				height: 10px
+				+bor-rad(50px)
+				background: $white
+				box-shadow: 1px 1px 1px color-rgba($black,0.16)
+				+ li
+					margin-left: 5px
+				&.slick-active
+					background: $green
+				button
+					display: none
+	.home-ads
+		width: calc(100% - 685px - 10px)
+		margin-left: 10px
+		.banner-ad
+			display: block
+			margin-bottom: 10px
+			img
+				width: 100%
+				height: 175px
+				object-fit: cover
+.home-newbook
+	background: $white
+	padding: 0px 20px
+	width: 100%
+	max-width: 100%
+	min-height: 420px
+	+pos(rel,null)
+	.product-slick2
+		margin: 0px -20px
+		.slick-prev, .slick-next
+			+pos(abs,50% null null null)
+			+transform(translateY(-50%))
+			+fs(0)
+			z-index: 5
+			&:before
+				content: ''
+				+flexbox
+				align-items: center
+				align-content: center
+				justify-content: center
+				+fs(18rem)
+				width: 30px
+				height: 60px
+				background: $white
+				box-shadow: 1px 1px 3px color-rgba($black,0.2)
+			&:hover
+				color: $green
+		.slick-prev
+			left: 0px
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 0px
+			&:before
+				content: '\f105'
+
+.hot-keyword
+	margin-bottom: 20px
+	.keyword-slick
+		.slick-prev, .slick-next
+			+pos(abs,50% null null null)
+			+transform(translateY(-50%))
+			+fs(0)
+			z-index: 5
+			&:before
+				content: ''
+				+flexbox
+				align-items: center
+				align-content: center
+				justify-content: center
+				+fs(16rem)
+				width: 20px
+				height: 20px
+				+bor-rad(50px)
+				background: $white
+				box-shadow: 1px 1px 3px color-rgba($black,0.2)
+			&:hover
+				color: $green
+			&.slick-disabled
+				opacity: 0.3
+		.slick-prev
+			left: 5px
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 5px
+			&:before
+				content: '\f105'
+		.slick-list
+			margin: 0px -5px
+		.item
+			padding: 0px 5px
+	.keyword
+		height: 50px
+		border: 1px solid darken($white,15%)
+		+bor-rad(4px)
+		background: $white
+		+flexbox
+		align-items: center
+		align-content: center
+		justify-content: center
+		+fs(13rem)
+		line-height: 1.2
+		text-align: center
+		padding: 0px 5px
+		&:hover
+			color: $green
+
+// home product
+.home-product
+	background: $white
+	padding: 0px 20px
+	+pos(rel,null)
+	margin-bottom: 10px
